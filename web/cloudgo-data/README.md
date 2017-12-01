@@ -17,6 +17,28 @@ ORM方法论基于三个核心原则：
 传达性：数据库结构被任何人都能理解的语言文档化。
 精确性：基于数据模型创建正确标准化了的结构。
 
+
+数据库的创建，然后使用命令行创建两个表
+
+![这里写图片描述](http://img.blog.csdn.net/20171202004139881?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc3lzdWx6cQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+![这里写图片描述](http://img.blog.csdn.net/20171202004208817?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc3lzdWx6cQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+
+使用cloudgo-data代码测试：
+
+
+![这里写图片描述](http://img.blog.csdn.net/20171202004414210?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc3lzdWx6cQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+![这里写图片描述](http://img.blog.csdn.net/20171202004433528?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc3lzdWx6cQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+
+使用cloudgo-data-template测试，这使用了orm，测试结果如下：
+
+![这里写图片描述](http://img.blog.csdn.net/20171202004455500?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc3lzdWx6cQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+![这里写图片描述](http://img.blog.csdn.net/20171202004508116?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc3lzdWx6cQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
 使用ab测试可以看到,使用orm牺牲了一定的性能，总结优缺点如下：
 
 优点：
@@ -32,3 +54,4 @@ ORM不能帮你生成所有的业务语句，有些复杂的生成不了，还�
 性能低，内部使用了大量反射以及数据库检测，造成性能必然低下。
 需要额外的学习成本，虽然不需要学习数据库，但是需要学习ORM语句。
 容易引起不规范开发，因为ORM可以在任何地方写ORM语句然后调用开发，给维护带来了很大的难度。
+
