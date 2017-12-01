@@ -1,4 +1,4 @@
-## cloudgo-data##
+## cloudgo-data
 
 --------------------------------
 这里使用的是老师推荐使用的entity - dao - service层次结构编程模型。
